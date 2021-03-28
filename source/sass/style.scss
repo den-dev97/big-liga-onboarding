@@ -17,7 +17,28 @@
 // Blocks
 //---------------------------------
 
+body {
+  background-color: $color-default-black;
+}
+
+//* {
+//  border: 1px solid red;
+//}
+
+.page {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: $viewport--lg;
+  min-width: $viewport--md;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: $color-default-white;
+}
+
 @import "blocks/header";
+@import "blocks/main";
+@import "blocks/blue-page";
 
 
 // используйте это для отключения ховеров на тач устройствах

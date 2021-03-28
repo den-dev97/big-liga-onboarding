@@ -1,0 +1,58 @@
+.blue-page {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: $color-neon-blue;
+  top: 50px;
+  right: 900px;
+  position: absolute;
+  z-index: 10;
+  justify-content: center;
+
+  @keyframes blue-page {
+    to {
+      right: 0;
+    }
+  }
+
+  @keyframes blue-page-back {
+    from {
+      right: 0;
+    }
+    99% {
+      right: 900px;
+
+    }
+    to {
+      display: none;
+    }
+  }
+
+  .main__case {
+    transform: translate(0,0);
+  }
+
+  .main__case-img {
+    opacity: 1;
+  }
+
+  .main__case-subtitle {
+    color: $color-default-white;
+  }
+}
+
+.blue-page-back {
+  animation: blue-page-back 1s forwards ease-in-out;
+  @keyframes blue-page-back {
+    from {
+      right: 0;
+    }
+    99% {
+      right: 900px;
+
+    }
+    to {
+      display: none;
+    }
+  }
+}
